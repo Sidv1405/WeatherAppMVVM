@@ -1,3 +1,4 @@
+// settings.gradle
 pluginManagement {
     repositories {
         google {
@@ -9,15 +10,16 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
-        maven ("https://jitpack.io")
+        maven("https://jitpack.io")  // Jitpack repository for plugins and libraries
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven ("https://jitpack.io")
+        maven("https://jitpack.io")  // Jitpack repository for resolving dependencies
     }
 }
 
