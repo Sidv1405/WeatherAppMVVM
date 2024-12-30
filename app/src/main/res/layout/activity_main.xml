@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
+    <!-- Hình nền -->
     <ImageView
         android:id="@+id/bgImage"
         android:layout_width="wrap_content"
@@ -18,17 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/sunny_bg" />
 
-    <com.github.matteobattilana.weather.WeatherView
-        android:id="@+id/weatherView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+    <!-- Biểu tượng thêm thành phố -->
     <ImageView
         android:id="@+id/addCity"
         android:layout_width="wrap_content"
@@ -39,6 +30,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plus" />
 
+    <!-- Tên thành phố -->
     <TextView
         android:id="@+id/cityTxt"
         android:layout_width="wrap_content"
@@ -55,6 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Thanh tiến trình khi tải dữ liệu -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
@@ -65,6 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Thông tin chi tiết về thời tiết -->
     <LinearLayout
         android:id="@+id/detailLayout"
         android:layout_width="match_parent"
@@ -75,6 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cityTxt">
 
+        <!-- Cột gió -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -116,6 +111,7 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
+        <!-- Cột thông tin nhiệt độ -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -197,6 +193,7 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!-- Cột độ ẩm -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -239,4 +236,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

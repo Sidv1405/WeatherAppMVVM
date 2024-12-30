@@ -11,6 +11,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
         maven("https://jitpack.io")  // Jitpack repository for plugins and libraries
+//        maven ("https://jcenter.bintray.com/" )
     }
 }
 
@@ -20,6 +21,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io")  // Jitpack repository for resolving dependencies
+//        maven ("https://jcenter.bintray.com/" )
     }
 }
 

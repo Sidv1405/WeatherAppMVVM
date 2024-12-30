@@ -81,7 +81,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0") //Xu ly hinh anh
 
     //Other
-    implementation ("com.github.MatteoBattilana:WeatherView:3.0.0") //Giao dien thoi tiet
+//    implementation ("com.github.MatteoBattilana:WeatherView:3.0.0") //Giao dien thoi tiet
 }
 
 kapt {
